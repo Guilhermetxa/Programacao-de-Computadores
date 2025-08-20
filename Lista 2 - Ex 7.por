@@ -7,7 +7,7 @@ Ao final, apresente o gabarito ao usuário.
 programa {
   funcao inicio() {
 
-   cadeia resposta1, resposta2, resposta3
+   cadeia resposta1, resposta2, resposta3, a, b, c
 
    escreva("Digite 'V' para Verdadeiro e 'F' para Falso\n")
 
@@ -19,15 +19,13 @@ programa {
     escreva("c) O fogo é frio.\n")
     leia(resposta3)
 
-    se(resposta1 == 'V' ou resposta2 == 'V' ou resposta3 == 'F' ou resposta1 == 'v' ou resposta2 == 'v' ou resposta3 == 'f'){
-      escreva(resposta1, resposta2, resposta3)
+    se(resposta1 == 'V' e resposta2 == 'V' e resposta3 == 'F')
+    {
+      escreva("Suas respostas: ", "a)", resposta1, " b)", resposta2, " c)", resposta3)
+      escreva("\nVocê gabaritou!")
     }
-    senao{
     
-    }
-
-
-
+  
   escreva("\nGabarito:\n a) V\n b) V\n c) F")
 
   }
